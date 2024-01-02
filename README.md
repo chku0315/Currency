@@ -1,6 +1,8 @@
 # Currency
 This project provides APIs for currency exchange information, leveraging the Coindesk Bitcoin Price Index (BPI). Users can retrieve the latest Coindesk data, transform it, and perform various operations on currency information.
 
+The SQL for creating the 'Currency' table can be found in src/main/resource/schema.sql.
+
 ## Environment
 - Java 8
 - Spring Boot 2.5.4
