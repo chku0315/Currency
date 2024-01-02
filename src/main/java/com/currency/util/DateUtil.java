@@ -1,14 +1,12 @@
 package com.currency.util;
 
 import com.currency.model.UpdateTime;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
-@Slf4j
 @Component
 public class DateUtil {
     DateTimeFormatter targetFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");

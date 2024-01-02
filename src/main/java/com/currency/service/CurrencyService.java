@@ -47,7 +47,7 @@ public class CurrencyService {
             String jsonResponse = restTemplate.getForObject(coindeskApiUrl, String.class);
             return objectMapper.readValue(jsonResponse, Coindesk.class);
         } catch (JsonProcessingException e) {
-            log.error("getCoindesk format json error: {}", e.getMessage());
+            log.error("[getCoindesk] format api response json error: {}", e.getMessage());
             throw new ParseException(e.getMessage());
         }
     }
@@ -70,7 +70,7 @@ public class CurrencyService {
             if (currencyOptional.isPresent()) {
                 value.setCodeName(currencyOptional.get().getCcyName());
             } else {
-                log.error("Currency with code {} not found", key);
+                log.error("[transformCoindesk] Currency with code {} not found", key);
                 throw new DataNotFoundException("Currency with code " + key + " not found");
             }
         });
