@@ -9,6 +9,8 @@ public class CurrencyApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CurrencyApplication.class, args);
 	}
+
 	
 	// uat 33
+
 }
