@@ -10,5 +10,5 @@ public class CurrencyApplication {
 		SpringApplication.run(CurrencyApplication.class, args);
 	}
 	
-	//commit1
+	// uat 33
 }
