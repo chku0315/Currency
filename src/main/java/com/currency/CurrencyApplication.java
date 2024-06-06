@@ -10,5 +10,6 @@ public class CurrencyApplication {
 		SpringApplication.run(CurrencyApplication.class, args);
 	}
 
-	// commit main2
+	
+	//commit1
 }
